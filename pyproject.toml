@@ -17,6 +17,8 @@ langgraph = "^0.4.3"
 ipython = "^8.22.2"
 langchain-community = "^0.3.23"
 duckduckgo-search = "^8.0.1"
+chromadb = ">0.5.12,<0.7.0"
+langchain-chroma = "^0.2.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.2"

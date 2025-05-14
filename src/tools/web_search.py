@@ -30,14 +30,11 @@ class WebSearchTool(BaseTool):
 
             formatted_results = ["<results>"]
             for result in results:
-                title = result.get("title", "No title")
-                snippet = result.get("snippet", "No description")
-                link = result.get("link", "No link")
                 formatted_results.append(
                     f"""  <result>
-    <title>{title}</title>
-    <description>{snippet}</description>
-    <link>{link}</link>
+    <title>{result.get("title", "No title")}</title>
+    <description>{result.get("snippet", "No description")}</description>
+    <link>{result.get("link", "No link")}</link>
   </result>"""
                 )
             formatted_results.append("</results>")

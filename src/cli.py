@@ -63,6 +63,10 @@ def main() -> NoReturn:
     # Run command
     subparsers.add_parser("run", help="Run the agent in interactive mode")
 
+    # Add documents command
+    add_docs_parser = subparsers.add_parser("add-docs", help="Add documents to the vector store")
+    add_docs_parser.add_argument("-p", "--path", required=True, help="Path to the folder containing documents")
+
     args = parser.parse_args()
 
     if args.command == "query":
@@ -74,6 +78,12 @@ def main() -> NoReturn:
         sys.exit(0)
     elif args.command == "run":
         run_interactive()
+        sys.exit(0)
+    elif args.command == "add-docs":
+        from tools.vectorstore import VectorStore
+        vectorstore = VectorStore()
+        result = vectorstore.add_documents_from_folder(args.path)
+        print(result)
         sys.exit(0)
     else:
         parser.print_help()

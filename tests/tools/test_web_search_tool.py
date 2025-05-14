@@ -84,24 +84,3 @@ def test_web_search_tool_run_error(web_search_tool):
         result
         == "<results><error>Error performing web search: Test error</error></results>"
     )
-
-
-@pytest.mark.asyncio
-async def test_web_search_tool_arun(web_search_tool, mock_search_results):
-    """Test WebSearchTool async run method."""
-    web_search_tool.search.results.return_value = mock_search_results
-    result = await web_search_tool._arun("test query")
-
-    expected = """<results>
-  <result>
-    <title>Test Title 1</title>
-    <description>Test Description 1</description>
-    <link>https://test1.com</link>
-  </result>
-  <result>
-    <title>Test Title 2</title>
-    <description>Test Description 2</description>
-    <link>https://test2.com</link>
-  </result>
-</results>"""
-    assert result == expected

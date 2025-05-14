@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorldOfWarcraft>
+    <GameTitle>World of Warcraft</GameTitle>
+    <Description>
+        World of Warcraft is a massively multiplayer online role-playing game (MMORPG) released in 2004 by Blizzard Entertainment.
+    </Description>
+
+    <Versions>
+        <Version>
+            <Name>Retail</Name>
+            <Description>
+                The current version of World of Warcraft, featuring the latest expansions and updates.
+            </Description>
+            <LatestExpansion>The War Within</LatestExpansion>
+            <LatestPatch>11.1.7</LatestPatch>
+            <PatchContent>
+                <Content>New UI changes arriving in Legacy of Arathor</Content>
+                <Content>Overcharged Delves with increased challenge</Content>
+                <Content>New Combat Assistant and Single-Button Assistant features</Content>
+            </PatchContent>
+            <Features>
+                <Feature>Modern graphics and gameplay mechanics</Feature>
+                <Feature>Regular content updates and new expansions</Feature>
+                <Feature>Dungeons, raids, and PvP content</Feature>
+            </Features>
+        </Version>
+
+        <Version>
+            <Name>Classic</Name>
+            <Description>
+                A version of World of Warcraft that aims to recreate the experience of the original game as it was in 2006.
+            </Description>
+            <LatestExpansion>Wrath of the Lich King Classic</LatestExpansion>
+            <LatestPatch>3.4.3</LatestPatch>
+            <PatchContent>
+                <Content>Updated Guilds user interface for easier management</Content>
+                <Content>Access to Might of Menethil for Alliance players</Content>
+            </PatchContent>
+            <Features>
+                <Feature>Original graphics and gameplay mechanics</Feature>
+                <Feature>Progressive content release mimicking the original timeline</Feature>
+                <Feature>Community-driven events and challenges</Feature>
+            </Features>
+        </Version>
+
+        <Version>
+            <Name>Hardcore</Name>
+            <Description>
+                A version of World of Warcraft Classic with additional rules to increase the difficulty and risk.
+            </Description>
+            <ReleaseDate>2023-08-24</ReleaseDate>
+            <LatestPatch>1.15.3</LatestPatch>
+            <PatchContent>
+                <Content>Updated Guilds user interface for easier management</Content>
+                <Content>Access to Might of Menethil for Alliance players</Content>
+                <Content>New Solo Self Found mode for leveling 1-60 alone without crafting or trading</Content>
+            </PatchContent>
+            <Features>
+                <Feature>Permadeath: Characters are permanently deleted upon death</Feature>
+                <Feature>No modern conveniences such as dungeon finders or cross-realm play</Feature>
+                <Feature>Community-driven challenges and events</Feature>
+                <Feature>Solo Self Found mode: Level 1-60 alone without crafting or trading until level 60</Feature>
+            </Features>
+        </Version>
+
+        <Version>
+            <Name>Season of Discovery</Name>
+            <Description>
+                A special version of World of Warcraft Classic that introduces new ways to experience the original content with unique rules and progression.
+            </Description>
+            <LatestPatch>1.15.6</LatestPatch>
+            <PatchContent>
+                <Content>New world event, dungeon, and raid to the experimental server</Content>
+                <Content>New abilities, or Runes, Discoveries, fresh PvP events, old and iconic dungeons revamped as raids, and level-banded content</Content>
+                <Content>New quest content in the Eastern Plaguelands and New Avalon</Content>
+                <Content>New Scarlet Enclave raid, opening on April 10, designed for 20 and 40 players</Content>
+            </PatchContent>
+            <Features>
+                <Feature>New ways to experience classic content with unique rules and progression</Feature>
+                <Feature>Community-driven events and challenges</Feature>
+                <Feature>Special seasonal rewards and achievements</Feature>
+            </Features>
+        </Version>
+    </Versions>
+</WorldOfWarcraft>

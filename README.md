@@ -10,10 +10,14 @@ A local LangChain-based agent starter kit with a graph workflow for tool executi
 - Tool execution with proper error handling
 - Modular node-based architecture
 - Easy to extend with new tools and nodes
+- VectorStore for managing and querying document embeddings
+
+## Graph
+![Graph of the workflow](workflow_graph.png)
 
 ## Requirement
 You need Ollama running (https://ollama.com/).
-If you want to change the model change the OLLAMA_MODEL string in the src/config/setting.py file.
+If you want to change the model, update the `OLLAMA_MODEL` string in the `src/config/setting.py` file.
 
 ## Installation
 
@@ -43,6 +47,10 @@ Create a PNG of the graph:
 poetry run agent visualize
 ```
 
+Add documents to the vector store:
+```bash
+poetry run agent add-docs -p /path/to/documents
+```
 
 ## Project Structure
 
@@ -57,7 +65,8 @@ ai-agent/
 │   │   └── workflow.py     # Workflow definition
 │   └── tools/              # Tool implementations
 │       ├── datetime_tool.py # Date and time related tools
-│       └── web_search.py   # Web search functionality
+│       ├── web_search.py   # Web search functionality
+│       └── vectorstore.py  # Vector store management
 ├── tests/                  # Test suite
 ├── pyproject.toml         # Project configuration
 └── README.md              # This file
